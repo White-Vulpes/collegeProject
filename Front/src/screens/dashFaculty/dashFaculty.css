@@ -1,0 +1,160 @@
+.mainDashFacultyContainer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+}
+
+.dashFacultyContainer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dashFacultyHeader{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.dashFacultyHeader p{
+    color: var(--textColor);
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    margin: 0;
+}
+
+.dashFacultyRegister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+}
+
+.dashFacultySelect{
+    z-index: 999;
+}
+
+.dashFacultyRegister button{
+    margin: 20px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Roboto Slab';
+    color: var(--textColor);
+    background-color: var(--background);
+    font-size: 20px;
+    box-shadow: 4px 4px 10px var(--secondary);
+    transition: 0.2s;
+}
+
+.dashFacultyRegister button:active {
+    box-shadow: 0px 0px 10px var(--secondary);
+}
+
+.dashFacultyData{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashFacultyCard{
+    margin: 10px;
+    padding-left: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 300px;
+}
+
+.dashFacultyCard h2{
+    color: var(--textColor);
+    font-family: 'Roboto Slab';
+}
+
+.dashFacultyCard p{
+    color: var(--textColor);
+    font-family: 'Roboto Slab';
+    font-weight: 200;
+}
+
+.dashFacultyCourses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Roboto Slab';
+    color: var(--textColor);
+}
+
+.dashFacultyCourseCard{
+    margin: 20px;
+    padding: 20px;
+    padding-left: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashFacultyCourseCard h1{
+    margin: 0;
+    color: var(--textColor);
+    font-family: 'Roboto Slab';
+}
+
+.dashFacultyCourseCard p{
+    color: var(--textColor);
+    font-family: 'Roboto Slab';
+}
+
+.verificationStatus{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.verificationStatus h2{
+    color: var(--textColor);
+    font-family: 'Roboto Slab';
+}
+
+.dashFacultyCourseRegButton{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    width: 210px;
+    background-color: var(--secondary);
+    font-family: 'Roboto Slab';
+    padding: 10px;
+    color: var(--textColor);
+    font-size: 20px;
+}
+
+.dashHodApprove{
+    position: fixed;
+    bottom: 0;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    background-color: var(--primary);
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 4px 4px 5px var(--secondary);
+    color: var(--textColor);
+    transition: .1s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dashHodApprove:active{
+    box-shadow: 0px 0px 5px var(--secondary);
+}

@@ -1,0 +1,4 @@
+.mainDashboardContainer{
+    background-color: var(--background);
+    transition: .3s;
+}

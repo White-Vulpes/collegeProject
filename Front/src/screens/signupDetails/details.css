@@ -1,0 +1,125 @@
+.mainDetailsContainer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    transition: .3s;
+}
+
+.detailsContainer{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.detailsFields {
+    background-color: var(--color);
+    padding: 2em;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.detailsFields p {
+    font-family: 'Roboto Slab';
+    color: var(--textColor);
+    font-size: 45px;
+    margin: 0;
+}
+
+.detailsFields span {
+    font-family: 'Mynerve';
+    font-size: 35px;
+    color: #6ce5c0;
+    margin: 0;
+}
+
+.detailsFields h2 {
+    font-family: 'Mynerve';
+    font-weight: 400;
+    color: var(--textColor);
+    margin: 10px;
+}
+
+.detailsInputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 3em;
+}
+
+.detailsInput {
+    margin: 10px;
+    height: 30px;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: #B6EADA;
+    font-family: 'Roboto Slab';
+    color: #03001C;
+}
+
+.detailsInputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    /* place-items: center; */
+}
+
+.inputTable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputTableRow{
+    font-family: 'Roboto Slab';
+    font-size: 17px;
+    color: var(--textColor);
+}
+
+@media screen and (max-width: 700px) {
+    .detailsInputs {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .detailsContainer{
+        overflow-y: scroll;
+        align-items: flex-start;
+    }
+}
+
+.detailsSubmitButton{
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    font-family: 'Roboto Slab';
+    color: var(--textColor);
+    background-color: var(--background);
+    font-size: 20px;
+    box-shadow: 4px 4px 10px var(--secondary);
+    transition: 0.2s;
+}
+
+.detailsSubmitButton:active{
+    box-shadow: 0px 0px 10px var(--secondary);
+}
+
+#errorcodes {
+    font-family: 'Consolas';
+    font-size: 17px;
+    color: red;
+    display: none;
+}

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --background: #082032;
+  --secondary: #FF4C29;
+  --primary: #334756;
+  --color: #2C394B;
+  --textColor: #FFFFFF;
+}
